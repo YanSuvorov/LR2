@@ -3,28 +3,27 @@ rem create new catalog
 md suvorov
 rem go to into new catalog
 cd suvorov
-echo > 03022002.txt
 md yan
-cd yan
 md adb1908
-cd adb1908
-echo > yancomputer.txt
 rem this need for pause of programm
 pause
-
+echo off
+rem create 03022002
+echo > 03022002.txt
+rem go to into adb1908
+cd adb1908
+rem create yancomputer
+echo > yancomputer.txt
+cd..
+cd..
+pause
 echo off
 del suvorov /S /Q /F
 pause
-
 echo off
 cd suvorov
-cd yan
+rd yan
 rd adb1908
 cd..
-rd yan
-cd..
 rd suvorov
-rem this need for pause of program
 pause
-
-
